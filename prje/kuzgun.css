@@ -1,0 +1,94 @@
+/* Genel sayfa ayarları */
+body {
+    font-family: 'Georgia', serif; /* Kitap tarzı yazı tipi */
+    background: linear-gradient(to bottom, #ffcb88, #eca763); /* Arka plan rengi */
+    margin: 0;
+    padding: 100;
+    display: flex;
+    flex-direction: column; /* Üstten alta sıralamak için */
+    align-items: center; /* Ortaya hizala */
+    min-height: 100vh; /* Sayfa boyutunda yer kapla */
+}
+
+main {
+    width: 60%; /* Sayfa genişliği */
+    max-width: 720px; /* Ekran büyüdükçe sınır koy */
+    background-color: #ffd298;
+    padding: 40px;
+    margin-top: 20px; /* Üstten küçük boşluk */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Köşeleri yuvarlat */
+}
+
+main p {
+    text-align: justify; /* İki yana yasla */
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 1.8; /* Satır arası boşluk */
+    text-indent: 2em; /* Paragraf başına girinti */
+}
+
+main h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left; /* Başlık sola hizalanır */
+}
+
+header h1 {
+    color: #000000; /* Başlık rengi: Kırmızı tonlarında */
+    font-size: 36px; /* Başlık boyutunu artır */
+    text-align: center; /* Ortaya hizala */
+    margin-top: 10px; /* Üstten hafif boşluk bırak */
+}
+
+header p {
+    color: #5e5e5e;
+    font-size: 18px;
+}
+
+.back-button {
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    
+    
+}
+
+.back-button:hover {
+    color: #eca763;
+}
+
+
+.baska-box{
+    background-color: #ffcb88;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* Yukarıdan ve aşağıdan boşluk bırak */
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+.baska-box-link {
+    color: inherit; /* Rengi miras al */
+    text-decoration: none; /* Altı çizgiyi kaldır */
+}
+
+.baska-box:hover {
+    background-color: #ffb85c; /* Hover durumunda arka plan rengi değişir */
+    transform: scale(1.05); /* Hover durumunda büyür */
+}
+
